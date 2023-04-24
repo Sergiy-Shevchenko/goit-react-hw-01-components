@@ -1,12 +1,12 @@
 
 import RenderProfile from './Profile';
-import user from './user.json';
+import user from '../json/user.json';
 import Statistics from './Statistics';
-import stats from './data.json';
+import stats from '../json/data.json';
 import FriendList from './FriendList';
-import friends from './friends';
+import friends from '../json/friends.json';
 import TransactionHistory from './TransactionHistory';
-import items from './transactions.json';
+import items from '../json/transactions.json';
 
 
 
