@@ -1,6 +1,6 @@
 
 import RenderProfile from './Profile';
-import user from '../json/user.json';
+import user from '././Profile/user.json';
 import Statistics from './Statistics';
 import stats from '../json/data.json';
 import FriendList from './FriendList';
