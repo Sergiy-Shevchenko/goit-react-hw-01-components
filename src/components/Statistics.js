@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import css from '././Statistics/statistics.module.css';
+import makeColorsStatistics from './utils/makeColorsStatistics';
 const Statistics = ({stats, title}) => {
-    
+    const makeColor = makeColorsStatistics()
         return (
     <section className={css.statistics}>
       <h2 className={css.title}>{title}</h2>
         <ul className={css.stat_list}>
          {stats.map(stat => (
-        <li className={css.item} key={stat.id}>
+        <li className={css.item} key={stat.id} style={{backgroundColor: makeColor}}>
           <span className={css.label}>{stat.label}</span>
           <span className={css.percentage}>{stat.percentage}%</span>
         </li>))}
