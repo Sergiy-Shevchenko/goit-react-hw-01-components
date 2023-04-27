@@ -34,10 +34,10 @@ export default function RenderProfile ({avatar, tag, username, location, stats})
     )};
 
     RenderProfile.propTypes = {
-        avatar: PropTypes.string, 
-        tag: PropTypes.string, 
-        username: PropTypes.string, 
-        location: PropTypes.string,
+        avatar: PropTypes.string.isRequired, 
+        tag: PropTypes.string.isRequired, 
+        username: PropTypes.string.isRequired, 
+        location: PropTypes.string.isRequired,
         stats: PropTypes.shape({
           followers: PropTypes.number.isRequired,
           views: PropTypes.number.isRequired,

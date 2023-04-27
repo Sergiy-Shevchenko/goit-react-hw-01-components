@@ -1,10 +1,11 @@
 .transaction_history {
     display: block;
     width: 350px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    border: solid 1px #49494a;   
-	margin-bottom: 20px; 
+    border-collapse: collapse;
+    margin-bottom: 20px; 
 
 }
 thead {
@@ -18,27 +19,18 @@ th {
 }
 
 
-.title {
-    align-items: center;
-}
-
-tbody {
-    align-items: center;
-    /* border: 1px solid #eee; */
-    /* border: none; */
-}
-
 tbody tr {
-	justify-content: center;
-	padding: 5px;
+    padding: 5px;
 	background: #efefef;
-	border: 1px solid #060606;
+	border: 1px solid #2a2a2a;
+    border-collapse: collapse;
+
 }
 tbody td {
-   
     width: 110px;
 	padding: 5px 10px;
-	border: 1px solid #eee;
+    border-collapse: collapse;
+	border: 1px solid #2a2a2a;
 	text-align: left;
 }
 
