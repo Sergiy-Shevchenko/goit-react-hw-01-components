@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import css from '././Profile/user.module.css';
-export default function RenderProfile ({avatar, tag, username, location, stats}) { 
+import css from './user.module.css';
+export default function RenderProfile ({avatar, tag, username, location, stats:{followers, views, likes}}) { 
 
     return (
     <div className={css.profile}>
@@ -19,15 +19,15 @@ export default function RenderProfile ({avatar, tag, username, location, stats})
       <ul className={css.stats}>
         <li className={css.item}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
+          <span className={css.quantity}>{followers}</span>
         </li>
         <li className={css.item}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
+          <span className={css.quantity}>{views}</span>
         </li>
         <li className={css.item}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
+          <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
@@ -42,5 +42,5 @@ export default function RenderProfile ({avatar, tag, username, location, stats})
           followers: PropTypes.number.isRequired,
           views: PropTypes.number.isRequired,
           likes: PropTypes.number.isRequired,
-        }),
+        }).isRequired,
     };

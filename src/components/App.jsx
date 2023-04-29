@@ -1,11 +1,11 @@
 
-import RenderProfile from './Profile';
+import RenderProfile from '././Profile/Profile.js';
 import user from '././Profile/user.json';
-import Statistics from './Statistics';
+import Statistics from '././Statistics/Statistics.js';
 import stats from '././Statistics/data.json';
-import FriendList from './FriendList';
+import FriendList from '././Friends/FriendList.js';
 import friends from '././Friends/friends.json';
-import TransactionHistory from './TransactionHistory';
+import TransactionHistory from '././TransactionHistory/TransactionHistory.js';
 import items from '././TransactionHistory/transactions.json';
 
 
